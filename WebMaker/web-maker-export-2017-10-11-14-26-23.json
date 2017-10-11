@@ -1,0 +1,52 @@
+[
+  {
+    "css": "article > header {\n  background: url(\"http://res.cloudinary.com/dagilleland/image/upload/v1507752947/UnSplash/riku-lu-4171.jpg\") no-repeat scroll center top #000;\n  background-size:cover;\n  min-height: 5em;\n  padding: 15px;\n}\nheader > h1 {\n  font-size: 2.25em;\n  padding: 0;\n  margin: 0;\n}",
+    "cssMode": "css",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "html": "<article>\n  <header>\n    <h1>Creating Demo Layouts</h1>\n  </header>\n  \n</article>",
+    "htmlMode": "html",
+    "id": "item-4M8nq0zumm",
+    "js": "",
+    "jsMode": "js",
+    "layoutMode": 1,
+    "mainSizes": [
+      50,
+      50
+    ],
+    "sizes": [
+      33.33,
+      33.33,
+      33.33
+    ],
+    "title": "Creating Demo Layouts",
+    "updatedOn": 1507753579890
+  },
+  {
+    "css": "@import url('https://fonts.googleapis.com/css?family=Roboto');\n\n/* Global Settings */\n* {\n  box-sizing: border-box;\n}\n\n/* Page Layout */\nbody {\n  margin: 0;\n  padding: 0;\n  display: grid;\n  grid-template-columns: min-content;\n  grid-template-rows: min-content;\n}\n\nbody > * {\n  border: solid 1px gray;\n}\n\nbody > header {\n  grid-column: 1;\n  grid-row: 1;\n}\n\nbody > nav {\n  grid-column: 2 / span 4;\n  grid-row: 1;\n}\n\nbody > main {\n  grid-column: 1 / span 5;\n  grid-row: 2;\n}\n\n/* Fonts and Colors */\n\nbody {\n  font-family: \"Roboto\", Helvetica, Arial, sans-serif;\n  font-size: 18px;\n}\n\nbody > header, body > nav, body > nav a {\n  background-color: black;\n  color: #999999;\n}\n\nbody > header h1 {\n  font-size: 1.5em;\n  margin: 0;\n  padding: 10px 15px;\n  white-space: nowrap;\n}\n\n/* Navigation Structure/styles */\nbody > nav ul {\n  list-style: none;\n  display: flex;\n  padding: 0;\n  margin: 0;\n}\n\nbody > nav li {\n  font-size: 1.2em;\n  font-weight: bold;\n  padding: 10px 15px;\n}\n\nbody > nav a {\n  text-decoration: none;\n}\n\n/* Main Content Styling */\nmain {\n  padding: 10px;\n  columns: 3;\n}\n\nmain > h1:first-child {\n  column-span: all;\n}\n\nmain > h1 {\n  font-size: 1.5em;\n}\n\nmain > h1:first-child + p:first-letter {\n  float: left;\n  font-weight: bold;\n  font-style: normal;\n  font-size: 2em;\n  line-height: 1;\n  margin-right: 9px;\n  background-color: aqua;\n  border-radius: 5px;\n  padding: 5px;\n  margin: 0;\n  margin-right: 2px;\n}\n\nmain > p:first-of-type {\n  font-size: 1.1em;\n  font-style:italic;\n}\n\n/* Class-specific styles */\n.float {\n  float: right;\n  display: inline-block;\n  \n}\n",
+    "cssMode": "css",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "html": "<body>\n  <main>\n    <h1>CSS Grid and Unbtrusive Styling</h1>\n    <p>The new css Grid makes possible the ability to generate web page layouts in an <b>unobtrusive</b> way.</p>\n    <p>What does this mean for HTML markup? First of all, it means that our HTML markup can be a <em>lot</em> cleaner. No more nesting content inside of <code>&lt;div&gt;</code> tags, or littering our markup with classes. Secondly, it means that our HTML can be <b>semantic</b>: the structure of our markup should focus on the meaning of the <em>content</em>.</p>\n    <h1>What is Lorem Ipsum?</h1>\n    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem vel amet expedita iste illum, labore fugit ab delectus? Quos ex quis est nisi sapiente, eaque voluptatum magni ipsum iusto distinctio? Lorem ipsum dolor sit amet.</p>\n    <img class=\"float\" src=\"https://placeholdit.co/i/150x70\">\n    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam non expedita dolore culpa commodi ea blanditiis laborum ratione repellat earum cumque asperiores accusantium, amet quaerat incidunt est dolorum odit nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo error assumenda adipisci eveniet harum amet nostrum, suscipit quis laboriosam veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor assumenda ipsa magnam unde aliquam earum fuga ullam hic exercitationem aperiam modi velit, porro amet laudantium facere quos saepe officia voluptatum. Numquam maiores illo itaque reiciendis non, aut molestiae in repellendus dicta, corrupti quis ex!</p>\n    <p>Quas porro qui dignissimos, accusantium, velit molestias aspernatur enim, eveniet aut ducimus fugit officiis voluptates non hic neque consectetur error assumenda harum libero. Consequuntur voluptate consectetur earum rem reiciendis cumque.</p>\n    <p>Ad ipsam dolores minima, id facere consequuntur accusantium praesentium vero modi beatae asperiores, rem optio, dolore qui adipisci magnam. Harum eaque aut, non nostrum consectetur quae. Dolorum autem excepturi quo.</p>\n    <p>Dolorum omnis asperiores nemo corrupti accusantium harum numquam aliquam architecto commodi at fugit sapiente odit nisi, expedita eaque amet. Fugiat eius, sint quaerat nihil itaque laborum officiis possimus deserunt! Corporis.</p>\n    <p>Dicta, nisi voluptate explicabo blanditiis alias porro quam tenetur id, enim atque ex sunt qui ea consequatur earum veritatis facere. Quasi totam, quibusdam distinctio alias animi suscipit aliquam vitae dolor.</p>\n  </main>\n  <header>\n    <h1>U-Screen</h1>\n  </header>\n  <nav>\n    <ul>\n      <li><a href=\"\">Menu 1</a></li>\n      <li><a href=\"\">Menu 2</a></li>\n      <li><a href=\"\">Menu 3</a></li>\n      <li><a href=\"\">Menu 4</a></li>\n      <li><a href=\"\">Menu 5</a></li>\n    </ul>\n  </nav>\n</body>",
+    "htmlMode": "html",
+    "id": "item-J43EiEcLBW",
+    "js": "",
+    "jsMode": "js",
+    "layoutMode": 2,
+    "mainSizes": [
+      42.3204,
+      54.5183
+    ],
+    "sizes": [
+      33.33,
+      33.33,
+      33.33
+    ],
+    "title": "Unobtrusive CSS Layout and Styling",
+    "updatedOn": 1506631706369
+  }
+]
