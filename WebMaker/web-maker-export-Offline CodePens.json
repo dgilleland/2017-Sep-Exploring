@@ -1,0 +1,27 @@
+[
+  {
+    "css": "article > header {\n  background: url(\"http://res.cloudinary.com/dagilleland/image/upload/v1507752947/UnSplash/riku-lu-4171.jpg\") no-repeat scroll center top #000;\n  background-size:cover;\n  min-height: 5em;\n  padding: 15px;\n}\nheader > h1 {\n  font-size: 2.25em;\n  padding: 0;\n  margin: 0;\n}",
+    "cssMode": "css",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "html": "<article>\n  <header>\n    <h1>Web Maker</h1>\n    <h2>Offline CodePen Management</h2>\n  </header>\n  <p>It's all in the tooling. <br /> With the Web Maker Chrome extension, you can quickly explore/learn/create with HTML, CSS and JavaScript in an \"offline\" mode (i.e.: <i>no internet required</i>).</p>\n  <h5>ToDo</h5>\n  <ul>\n    <li>Get images from UnSplash</li>\n    <li>Use Cloudinary for your images (ok, not entirely offline...)</li>\n    <li>Export/Import your creations</li>\n    <li>Use a GitHub repository to store your exported creations.</li>\n    <li>Add libraries through Web Maker</li>\n    <li>Some other good benefit, I don't know what quite yet...</li>\n  </ul>\n</article>",
+    "htmlMode": "html",
+    "id": "item-N0SOCYufS0",
+    "js": "",
+    "jsMode": "js",
+    "layoutMode": 1,
+    "mainSizes": [
+      50,
+      50
+    ],
+    "sizes": [
+      33.33,
+      33.33,
+      33.33
+    ],
+    "title": "Offline CodePens",
+    "updatedOn": 1507754269703
+  }
+]
