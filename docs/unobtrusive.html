@@ -1,0 +1,158 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Settings */
+* {
+  box-sizing: border-box;
+}
+
+/* Page Layout */
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
+}
+
+body > * {
+  border: solid 1px gray;
+}
+
+body > header {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+body > nav {
+  grid-column: 2 / span 4;
+  grid-row: 1;
+}
+
+body > main {
+  grid-column: 1 / span 5;
+  grid-row: 2;
+}
+
+/* Fonts and Colors */
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+body > header, body > nav, body > nav a {
+  background-color: black;
+  color: #999999;
+}
+
+body > header h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+
+/* Navigation Structure/styles */
+body > nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+body > nav li {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+body > nav a {
+  text-decoration: none;
+}
+
+/* Main Content Styling */
+main {
+  padding: 10px;
+  columns: 3;
+}
+
+main > h1:first-child {
+  column-span: all;
+  background-color: lightgray;
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 7px;
+  border-top: inset 3px cyan;
+  border-bottom: inset 3px cyan;
+}
+
+main > h1 {
+  font-size: 1.5em;
+}
+
+main > h1:first-child + p:first-letter {
+  float: left;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 1;
+  margin-right: 9px;
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0;
+  margin-right: 2px;
+}
+
+main > p:first-of-type {
+  font-size: 1.1em;
+  font-style:italic;
+}
+
+/* Class-specific styles */
+.float {
+  float: right;
+  display: inline-block;
+  
+}
+
+</style>
+</head>
+<body>
+<body>
+  <main>
+    <h1>CSS Grid and Unbtrusive Styling</h1>
+    <p>The new css Grid makes possible the ability to generate web page layouts in an <b>unobtrusive</b> way.</p>
+    <p>What does this mean for HTML markup? First of all, it means that our HTML markup can be a <em>lot</em> cleaner. No more nesting content inside of <code>&lt;div&gt;</code> tags, or littering our markup with classes. Secondly, it means that our HTML can be <b>semantic</b>: the structure of our markup should focus on the meaning of the <em>content</em>.</p>
+    <h1>What is Lorem Ipsum?</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem vel amet expedita iste illum, labore fugit ab delectus? Quos ex quis est nisi sapiente, eaque voluptatum magni ipsum iusto distinctio? Lorem ipsum dolor sit amet.</p>
+    <img class="float" src="https://placeholdit.co/i/150x70">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam non expedita dolore culpa commodi ea blanditiis laborum ratione repellat earum cumque asperiores accusantium, amet quaerat incidunt est dolorum odit nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo error assumenda adipisci eveniet harum amet nostrum, suscipit quis laboriosam veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor assumenda ipsa magnam unde aliquam earum fuga ullam hic exercitationem aperiam modi velit, porro amet laudantium facere quos saepe officia voluptatum. Numquam maiores illo itaque reiciendis non, aut molestiae in repellendus dicta, corrupti quis ex!</p>
+    <p>Quas porro qui dignissimos, accusantium, velit molestias aspernatur enim, eveniet aut ducimus fugit officiis voluptates non hic neque consectetur error assumenda harum libero. Consequuntur voluptate consectetur earum rem reiciendis cumque.</p>
+    <p>Ad ipsam dolores minima, id facere consequuntur accusantium praesentium vero modi beatae asperiores, rem optio, dolore qui adipisci magnam. Harum eaque aut, non nostrum consectetur quae. Dolorum autem excepturi quo.</p>
+    <p>Dolorum omnis asperiores nemo corrupti accusantium harum numquam aliquam architecto commodi at fugit sapiente odit nisi, expedita eaque amet. Fugiat eius, sint quaerat nihil itaque laborum officiis possimus deserunt! Corporis.</p>
+    <p>Dicta, nisi voluptate explicabo blanditiis alias porro quam tenetur id, enim atque ex sunt qui ea consequatur earum veritatis facere. Quasi totam, quibusdam distinctio alias animi suscipit aliquam vitae dolor.</p>
+  </main>
+  <header>
+    <h1>U-Screen</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="">Menu 1</a></li>
+      <li><a href="">Menu 2</a></li>
+      <li><a href="">Menu 3</a></li>
+      <li><a href="">Menu 4</a></li>
+      <li><a href="">Menu 5</a></li>
+    </ul>
+  </nav>
+</body>
+
+<script src="chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/lib/screenlog.js"></script><script src="filesystem:chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/temporary/script.js">
+</script>
+</body>
+</html>
