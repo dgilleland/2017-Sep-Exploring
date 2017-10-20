@@ -1,0 +1,27 @@
+[
+  {
+    "css": "@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800|Roboto+Condensed|Roboto+Mono:400,500,500i|Roboto+Slab:400,700|Roboto:400,500&subset=greek-ext,latin-ext');\n/* Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab */\n\nbody {\n  font-size: 16px;\n}\n\nh1, h2, h3, h4 {\n  font-family: 'Raleway', sans-serif;\n}\n\nh5, h6 {\n  font-family: 'Roboto Slab', serif;\n}\n\nheading > p:first-child {\n  font-family: 'Raleway', sans-serif;\n  font-size: 1.1rem;\n}\nheading > h1 {\n  font-family: 'Raleway 700', sans-serif;\n  font-size: 3rem;\n}",
+    "cssMode": "css",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "html": "<heading>\n  <p>Object Oriented</p>\n  <h1>Programming <em>Fundamentals</em>  </h1>\n  <p>Learn the fundamentls of computer programming with objects.</p>\n</heading>\n\nhttps://digitalsynopsis.com/design/best-font-combinations-typeface-pairings-guide/\n",
+    "htmlMode": "html",
+    "id": "item-U0s1JCpnDj",
+    "js": "",
+    "jsMode": "js",
+    "layoutMode": 2,
+    "mainSizes": [
+      50,
+      50
+    ],
+    "sizes": [
+      33.33,
+      33.33,
+      33.33
+    ],
+    "title": "My Font Families",
+    "updatedOn": 1508514736025
+  }
+]
