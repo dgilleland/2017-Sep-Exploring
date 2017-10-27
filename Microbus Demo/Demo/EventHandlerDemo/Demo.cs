@@ -14,7 +14,10 @@ namespace Demo.EventHandlerDemo
         IContainer DiContainer;
         public DemoEvents()
         {
-            var busBuilder = new BusBuilder().RegisterHandlers(GetType().Assembly);
+            // MicroBus
+            var busBuilder = new BusBuilder();
+            busBuilder.RegisterHandlers(GetType().Assembly);
+            // Autofac
             var builder = new ContainerBuilder();
             builder.RegisterMicroBus(busBuilder);
             DiContainer = builder.Build();

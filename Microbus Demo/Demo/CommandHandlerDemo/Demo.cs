@@ -14,7 +14,11 @@ namespace Demo.CommandHandlerDemo
         IContainer DiContainer;
         public DemoCommands()
         {
-            var busBuilder = new BusBuilder().RegisterHandlers(GetType().Assembly);
+            // MicroBus
+            var busBuilder = new BusBuilder();
+            busBuilder.RegisterHandlers(GetType().Assembly);
+            busBuilder.RegisterGlobalHandler<WireTapHandler>();
+            // Autofac
             var builder = new ContainerBuilder();
             builder.RegisterMicroBus(busBuilder);
             DiContainer = builder.Build();
