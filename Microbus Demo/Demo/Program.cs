@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Demo.CommandHandlerDemo;
 using Demo.EventHandlerDemo;
 using Enexure.MicroBus;
 using Enexure.MicroBus.Autofac;
@@ -20,21 +21,23 @@ namespace Demo
 
         void Run()
         {
-            Console.WriteLine("MicroBus Demos");
-            Console.WriteLine("==============\n");
             string choice;
             do
             {
                 // Display menu
+                Console.WriteLine("MicroBus Demos");
+                Console.WriteLine("==============\n");
                 Console.WriteLine("A) Commands and Command Handlers");
                 Console.WriteLine("B) Events and Event Handlers");
                 Console.WriteLine("C) Queries");
+                Console.WriteLine("X) eXit");
                 Console.Write("\nSelect a demo: ");
                 choice = Console.ReadLine().ToUpper();
                 // Process menu choice
                 switch(choice)
                 {
                     case "A":
+                        new DemoCommands().Run();
                         break;
                     case "B":
                         new DemoEvents().Run();
