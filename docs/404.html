@@ -1,22 +1,26 @@
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
       .omnibox {
         border: solid .5px rgba(0,0,0,.4);
         padding:4px;
         border-radius: 3px;
-        font-size: 14px;
+        font-size: 18px;
+        display: inline-block;
       }
       .lock {
         font-size: .8em;
         color: green;
       }
-      
+      img {
+        margin-left:50px;
+      }
     </style>
   </head>
   <body>
     <h1>404</h1>
-    <img src="404.png" />
+    <img src="404.png" /><br />
     <div class="omnibox"><span class="lock">&nbsp;<i class="fa fa-lock">&nbsp;&nbsp;Secure</i></span> | <span id="addr"></span></div>
     <script>
       document.getElementById('addr').innerText = document.location.href;
