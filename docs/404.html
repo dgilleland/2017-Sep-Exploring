@@ -1,9 +1,25 @@
 <html>
   <head>
-
+    <style>
+      .omnibox {
+        border: solid .5px rgba(0,0,0,.4);
+        padding:4px;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+      .lock {
+        font-size: .8em;
+        color: green;
+      }
+      
+    </style>
   </head>
   <body>
     <h1>404</h1>
-    <img src="404.png" />    
+    <img src="404.png" />
+    <div class="omnibox"><span class="lock">&nbsp;<i class="fa fa-lock">&nbsp;&nbsp;Secure</i></span> | <span id="addr"></span></div>
+    <script>
+      document.getElementById('addr').innerText = document.location.href;
+    </script>
   </body>
 </html>
