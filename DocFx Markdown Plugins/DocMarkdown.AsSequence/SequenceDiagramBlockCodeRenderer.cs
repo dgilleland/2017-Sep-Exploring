@@ -21,7 +21,7 @@ namespace DocMarkdown.AsSequence
         {
             StringBuffer result = "<pre><code class=\"";
             result += renderer.Options.LangPrefix;
-            result += "csharp";
+            result += "sequence";
             result += "\">";
             result += token.Code;
             result += "\n</code></pre>";
