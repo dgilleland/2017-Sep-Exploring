@@ -19,6 +19,10 @@ namespace DocMarkdown.AsSequence
 
         public override StringBuffer Render(IMarkdownRenderer renderer, MarkdownCodeBlockToken token, MarkdownBlockContext context)
         {
+            List<string> dependencies = new List<string>();
+            dependencies.Add(@"mermaid\mermaid.min.js");
+            dependencies.Add(@"mermaid\mermaid.core.js");
+            context.ReportDependency(dependencies);
             StringBuffer result = "<pre><code class=\"";
             result += renderer.Options.LangPrefix;
             result += "sequence";
