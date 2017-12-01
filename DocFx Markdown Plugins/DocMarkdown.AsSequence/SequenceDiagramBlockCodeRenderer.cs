@@ -23,12 +23,12 @@ namespace DocMarkdown.AsSequence
             dependencies.Add(@"mermaid\mermaid.min.js");
             dependencies.Add(@"mermaid\mermaid.core.js");
             context.ReportDependency(dependencies);
-            StringBuffer result = "<pre><code class=\"";
-            result += renderer.Options.LangPrefix;
-            result += "sequence";
+            StringBuffer result = "<pre class=\"";
+            //result += renderer.Options.LangPrefix;
+            result += "mermaid";
             result += "\">";
             result += token.Code;
-            result += "\n</code></pre>";
+            result += "\n</pre>";
             return result;
         }
     }
