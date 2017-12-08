@@ -14,14 +14,17 @@ This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (Fi
 
 ### 0NF
 
-After performing Zero-Normal Form, a single table was generated: Order.
-Order	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Date, OrderNumber, {ItemNumber, Description, Quantity, CurrentPrice, SellingPrice, Amount}, Subtotal, GST, Total)
+After performing Zero-Normal Form, a single table was generated: **Order**.
+
+**Order**	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Date, <q class="pk">OrderNumber</q>, {ItemNumber, Description, Quantity, CurrentPrice, SellingPrice, Amount}, Subtotal, GST, Total)
 
 ### 1NF
 
 After performing First-Normal Form, a new table was generated: OrderDetail.
-Order	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Date, OrderNumber, Subtotal, GST, Total)
-OrderDetail	(OrderNumber, ItemNumber, Description, Quantity, CurrentPrice, SellingPrice, Amount)
+
+Order	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Date, <q class="pk">OrderNumber</q>, Subtotal, GST, Total)
+
+OrderDetail	(<q class="pk"><u class="fk">OrderNumber</u>, ItemNumber</q>, Description, Quantity, CurrentPrice, SellingPrice, Amount)
 
 ### 2NF
 
@@ -47,3 +50,16 @@ Item	(ItemNumber, Description, CurrentPrice)
 Customer	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, HomePhone)
 ERD for ESP Document 1
  
+<style>
+.pk {
+    font-weight: bold;
+    display: inline-block;
+    border: solid thin black;
+    padding: 0 1px;
+}
+.fk {
+    font-style: italic,
+    color: green;
+    text-decoration: wavy underline green;    
+}
+</style>
