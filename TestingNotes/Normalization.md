@@ -58,7 +58,7 @@ ERD for ESP Document 1
     padding: 0 1px;
 }
 .fk {
-    font-style: italic,
+    font-style: italic;
     color: green;
     text-decoration: wavy underline green;    
 }
