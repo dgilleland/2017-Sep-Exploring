@@ -50,7 +50,7 @@ Item	(ItemNumber, Description, CurrentPrice)
 Customer	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, HomePhone)
 ERD for ESP Document 1
  
-<style>
+<style type="text/css">
 .pk {
     font-weight: bold;
     display: inline-block;
