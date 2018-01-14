@@ -1,5 +1,6 @@
 ﻿using Demo.CommandHandlerDemo;
 using Demo.EventHandlerDemo;
+using Demo.QueryDemo;
 using System;
 
 namespace Demo
@@ -36,6 +37,7 @@ namespace Demo
                         new DemoEvents().Run();
                         break;
                     case "C":
+                        new DemoQueries().Run();
                         break;
                 }
                 Console.WriteLine("\nPress [Enter] to continue...");
