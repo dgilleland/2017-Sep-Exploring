@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>jsSequence Quick Test Page</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+  
+  <script src="webfont.js"></script>
+  <script src="snap.svg-min.js"></script>
+  <script src="underscore-min.js"></script>
+  <script src="sequence-diagram-min.js"></script>
+</head>
+<body>
+<pre id="diagram">
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+</pre>
+<script>
+  var md = document.getElementById('diagram').innerText;
+  var diagram = Diagram.parse(md);
+  diagram.drawSVG("diagram", {theme: 'simple'}); // or 'hand'
+  document.getElementById('diagram').innerText = '';
+</script>
+</body>
+</html>
