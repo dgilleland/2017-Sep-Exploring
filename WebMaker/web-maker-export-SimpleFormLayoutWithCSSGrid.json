@@ -1,0 +1,27 @@
+[
+  {
+    "css": "form {\n  display: grid;\n  grid-template-columns: auto 20px auto auto;\n  grid-row-gap: 7px;\n}\n\nfieldset {\n  display: content;\n  grid-column: 2 / 5;\n  border: 0;\n  padding: 0;\n  margin: 0;\n}\n\nfieldset > legend {\n  display: none;\n}\n\nlabel {\n  grid-column: 1;\n  text-align: right;\n  margin-right: 10px;\n}\n\ninput[type=text], input[type=email], input[type=url], input[type=password] {\n  grid-column: 2 / 5;\n}\n\ninput[type=checkbox] + label {\n  grid-column: 3 / 5;\n  text-align: left;\n}\n\nform > div {\n  grid-column: 2 / 5;\n}\n",
+    "cssMode": "css",
+    "externalLibs": {
+      "css": "",
+      "js": ""
+    },
+    "html": "<form action=\"\">\n  <label for=\"\">First</label>\n  <input type=\"text\" />\n  \n  <label for=\"\">Last</label>\n  <input type=\"text\" />\n  \n  <label for=\"\">Age Range</label>\n  <fieldset name=\"ageGroup\">\n    <legend>Age-Range</legend>\n    <input type=\"radio\" />\n    <label for=\"\">0-17 years</label>\n    <input type=\"radio\" />\n    <label for=\"\">18-29 years</label>\n    <input type=\"radio\" />\n    <label for=\"\">30-59 years</label>\n    <input type=\"radio\" />\n    <label for=\"\">60+ years</label>\n  </fieldset>\n  \n  <label for=\"\">Agree</label>\n  <input type=\"checkbox\" />\n  <label for=\"\">I agree to the terms</label>\n\n  <label for=\"\">Email</label>\n  <input type=\"email\" />\n  \n  <div>\n    <input type=\"button\" value=\"Submit\" />\n    <button>Clear Form</button>\n  </div>\n</form>",
+    "htmlMode": "html",
+    "id": "item-xs7j9A05gi",
+    "js": "",
+    "jsMode": "js",
+    "layoutMode": 1,
+    "mainSizes": [
+      50,
+      50
+    ],
+    "sizes": [
+      "calc(45.7935% - 3px)",
+      "calc(48.4475% - 6px)",
+      "calc(5.74163% - 3px)"
+    ],
+    "title": "Simple Form Layout with CSS Grid",
+    "updatedOn": 1518200134636
+  }
+]
