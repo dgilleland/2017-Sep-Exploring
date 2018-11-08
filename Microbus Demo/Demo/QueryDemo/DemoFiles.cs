@@ -1,8 +1,6 @@
 ﻿using Enexure.MicroBus;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Demo.QueryDemo
@@ -10,6 +8,7 @@ namespace Demo.QueryDemo
     public class MeaningOfLife : IQuery<MeaningOfLife, int>
     {
         public readonly IEnumerable<int> Numbers;
+
         public MeaningOfLife(params int[] numbers)
         {
             Numbers = numbers;

@@ -4,9 +4,10 @@ using Enexure.MicroBus.Autofac;
 
 namespace Demo.EventHandlerDemo
 {
-    class DemoEvents
+    internal class DemoEvents
     {
-        IContainer DiContainer;
+        private IContainer DiContainer;
+
         public DemoEvents()
         {
             // MicroBus

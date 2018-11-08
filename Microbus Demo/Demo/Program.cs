@@ -1,19 +1,21 @@
 ﻿using Demo.CommandHandlerDemo;
 using Demo.EventHandlerDemo;
 using Demo.QueryDemo;
+using Demo.SagaDemo;
+using Demo.Variations;
 using System;
 
 namespace Demo
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var app = new Program();
             app.Run();
         }
 
-        void Run()
+        private void Run()
         {
             string choice;
             do
@@ -24,20 +26,32 @@ namespace Demo
                 Console.WriteLine("A) Commands and Command Handlers");
                 Console.WriteLine("B) Events and Event Handlers");
                 Console.WriteLine("C) Queries");
+                Console.WriteLine("D) Sagas");
+                Console.WriteLine("E) Generic Variation");
                 Console.WriteLine("X) eXit");
                 Console.Write("\nSelect a demo: ");
                 choice = Console.ReadLine().ToUpper();
                 // Process menu choice
-                switch(choice)
+                switch (choice)
                 {
                     case "A":
                         new DemoCommands().Run();
                         break;
+
                     case "B":
                         new DemoEvents().Run();
                         break;
+
                     case "C":
                         new DemoQueries().Run();
+                        break;
+
+                    case "D":
+                        new DemoSaga().Run();
+                        break;
+
+                    case "E":
+                        new DemoVariations().RunGenericVariation();
                         break;
                 }
                 Console.WriteLine("\nPress [Enter] to continue...");
@@ -45,7 +59,5 @@ namespace Demo
                 Console.Clear();
             } while (choice != "X");
         }
-
     }
-
 }

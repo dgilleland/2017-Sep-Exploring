@@ -2,16 +2,13 @@
 using Enexure.MicroBus;
 using Enexure.MicroBus.Autofac;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Demo.QueryDemo
 {
-    class DemoQueries
+    internal class DemoQueries
     {
-        IContainer DiContainer;
+        private IContainer DiContainer;
+
         public DemoQueries()
         {
             // MicroBus
@@ -27,7 +24,7 @@ namespace Demo.QueryDemo
         {
             var bus = DiContainer.Resolve<IMicroBus>();
 
-            var search = bus.QueryAsync(new MeaningOfLife(12,3,6,18));
+            var search = bus.QueryAsync(new MeaningOfLife(12, 3, 6, 18));
             search.Wait();
             Console.WriteLine($"The search for the MeaningOfLife is {search.Result}");
         }
